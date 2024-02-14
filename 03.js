@@ -67,6 +67,37 @@ true=>1
 // let isLoggedIn=Boolean(loggedIn);
 // console.log(isLoggedIn);
 
-let someNumber=23
-let stringNumber=String(someNumber);
-console.log(someNumber);
+// let someNumber=23
+// let stringNumber=String(someNumber);
+// console.log(someNumber);
+
+
+// operation 
+// console.log(2**2); //2 power 2
+// console.log(2%2);
+
+// console.log("1"+2); //treat as string
+// console.log(1+"2"); //treat as string
+
+// console.log("1"+2+3); //treat as string
+// console.log(1+"2"+3); //treat as string
+// console.log(1+2+"3"); //treat as interger (1+2)+"3" => 33
+
+
+// console.log(+true); //=>1
+// console.log(-true); //=>-1
+// console.log(+""); //=>0
+
+// console.log("02">1);
+// console.log(2>"1");
+
+//  console.log(null==0); //false
+//  console.log(null!=0);//true
+//  console.log(null>0);//false
+//  console.log(null>=0); // js tries to convert null to num i.e 0 thats why => true
+ 
+ // strict check => ===
+
+ 
+
+
