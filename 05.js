@@ -27,11 +27,38 @@ const newString=new String("hello-world")
 // let anotherString=newString.trim(); //remove whitespace
 // console.log(anotherString);
 
-let url="https:/ganeshdarewar.com/malware%20anlysis"
-let anotherUrl=url.replace("%20"," ")
-console.log(anotherUrl);
+// let url="https:/ganeshdarewar.com/malware%20anlysis"
+// let anotherUrl=url.replace("%20"," ")
+// console.log(anotherUrl);
 
-console.log(url.includes("ganesh"));//check string in data return true or false
+// console.log(url.includes("ganesh"));//check string in data return true or false
 
 
-console.log(newString.split("-"));
+// console.log(newString.split("-"));
+
+
+
+// some more methods of strings
+
+// let str1="ganesh"
+// let str2="darewar"
+// let str=str1.concat(" ", str2)
+// console.log(str);
+
+// let str= "   Hellow World    "
+// console.log(str.indexOf("World")); //=7
+
+// console.log(str.slice(-6,9));
+// console.log(str.toLowerCase());
+
+// console.log(str.toUpperCase());
+// console.log(str.trim())
+// console.log(str.split(" "))
+
+// console.log(str.startsWith("hellow"));
+// console.log(str.indexOf("H"));
+
+const str = "2";
+console.log(str.padStart(3, "0")); // Output: "005"
+console.log(str.padEnd(3, "0"));
+console.log(str.repeat(4));
