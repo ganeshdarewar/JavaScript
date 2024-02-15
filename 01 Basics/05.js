@@ -3,7 +3,7 @@
 let fName="ganesh"
 let Lname="darewar"
 // console.log("my name is "+fName+" "+Lname)
-console.log(`my name is ${fName} ${Lname}`);// use this
+// console.log(`my name is ${fName} ${Lname}`);// use this
 
 
 // string declaration using obects

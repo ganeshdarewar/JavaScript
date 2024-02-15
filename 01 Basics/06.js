@@ -1,7 +1,7 @@
 // Number and Maths
 
 // Number
-// const balance=new Number(23.89);
+const balance=new Number(23.89);
 // console.log(balance);
 // console.log(balance.toString().length);
 // console.log(balance.toFixed(2));
