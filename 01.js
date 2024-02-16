@@ -1,47 +1,76 @@
-// array 
-/*
-collectoin of multiple item
-Js array are resizable i.e u can add item further
+ function myFunction(){
+    console.log("Ganesh");
+ }
+//  myFunction//reference
+//  myFunction()// execution
 
-Array copy operation creates a shallow copy
-shallow copy=> 
-A shallow copy of an object is a copy whose properties share the same references (point to the same underlying values) as those of the source object from which the copy was made. As a result, when you change either the source or the copy, you may also cause the other object to change too. 
+function add2Num(num1, num2){// parameters
+    console.log(num1+num2);
+}
+// add2Num();// => Nan (because it needs an parameter in function)
+// add2Num(2,4);//arguments
+// add2Num(3, "4") //=> 34
+// add2Num(3, "a") //=> 3a
+// add2Num(3, null) //=> 3
 
-deeep copy=>
-A deep copy of an object is a copy whose properties do not share the same references
-*/
-// const myArr=[1,2,3, "Ganesh"]
-const myArr=[1,2,3,4,5,6]
-// const newArr=["Ganesh", "only You"]
-// const myArr2=new Array(1,2,3,4)
-// console.log(myArr[0]);
+// function loginUserName(userName) {
+//     return `${userName} just login`
+// }
+// console.log(loginUserName("Ganesh"));
+// console.log(loginUserName(""));//just login
+// console.log(loginUserName());//undefined just login
 
-// methods
+// function loginUserName(userName) {
+//    if(!userName){
+//     console.log("pls enter a username");
+//    }
+//     return `${userName} just login`
+// }
+// console.log(loginUserName());// undefined just login
 
-// myArr.push(6);
-// myArr.pop();
+function loginUserName(userName="sam") { // here sam is alternative  parameter arg is not passed
+    if(!userName){
+     console.log("pls enter a username");
+    }
+     return `${userName} just login`
+ }
+//  console.log(loginUserName());
+//  console.log(loginUserName("ganesh"));
 
 
-// myArr.unshift(0) // add items from 0th position
-// myArr.shift() // delete 1 item from 0th 
-// console.log(myArr);
+// function calculateCarPrice(...num1){ //rest operator used to passed infinite paramter
+//     return num1
+// }
+// console.log(calculateCarPrice(2,2,3,4));//[ 2, 2, 3, 4 ]/
+function calculateCarPrice(val1, val2,...num1){ //rest operator used to passed infinite paramter
+    return num1
+}
+// console.log(calculateCarPrice(2,2,3,4));//[ 3, 4 ]
 
-// console.log(myArr.includes(0));
-// console.log(myArr.indexOf(3));
 
-// const newArr=myArr.join()
-// console.log(myArr);
-// console.log(newArr);
-// console.log(typeof newArr);
 
-//slice splice
-// console.log("original array", myArr);
-// const myArr1=myArr.slice(1,3) // it return 1 to 2 positions item
-// console.log("slice array",myArr1);
-// console.log("original array after slice", myArr); //same as original
 
-console.log("original array", myArr);
-let myarr2=myArr.splice(1,3);
-console.log("splice ",myarr2);
-console.log("original array after splice", myArr); // here it deletes portion of splice items in original array
+// function with obj
 
+const user={
+    userName:'ganesh',
+    price:22
+}
+
+function handleObject(anyObject){
+    console.log(`username is ${anyObject.userName} and price is ${anyObject.price}`);
+}
+// handleObject(user)
+// handleObject({
+//     userName:"sam",
+//     price:233
+// })
+
+// Array
+
+const myNewArray=[200,400,100,600]
+function returnArray(getArray){
+    return getArray[1]
+}
+// console.log(returnArray(myNewArray));
+console.log(returnArray([0,1]));
