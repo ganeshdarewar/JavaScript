@@ -58,7 +58,11 @@ const newString=new String("hello-world")
 // console.log(str.startsWith("hellow"));
 // console.log(str.indexOf("H"));
 
-const str = "2";
-console.log(str.padStart(3, "0")); // Output: "005"
-console.log(str.padEnd(3, "0"));
-console.log(str.repeat(4));
+// const str = "2";
+// console.log(str.padStart(3, "0")); // Output: "002"
+// console.log(str.padEnd(3, "0")); // 200
+// console.log(str.repeat(4)); // 2222
+
+let str = "Hello, world!";
+let result = str.substring(3, 7); // Extracts characters from index 3 to index 6 (7 is not included)
+console.log(result); // Output: "lo, "
