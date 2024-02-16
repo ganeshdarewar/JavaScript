@@ -5,7 +5,10 @@ Js array are resizable i.e u can add item further
 
 Array copy operation creates a shallow copy
 shallow copy=> 
-A shallow copy of an object is a copy whose properties share the same references (point to the same underlying values) as those of the source object from which the copy was made. As a result, when you change either the source or the copy, you may also cause the other object to change too. 
+A shallow copy of an object is a copy whose properties share the same references 
+(point to the same underlying values) as those of the source object from which the 
+copy was made. As a result, when you change either the source or the copy, you may 
+also cause the other object to change too. 
 
 deeep copy=>
 A deep copy of an object is a copy whose properties do not share the same references
@@ -31,8 +34,8 @@ const myArr=[1,2,3,4,5,6]
 
 // const newArr=myArr.join()
 // console.log(myArr);
-// console.log(newArr);
-// console.log(typeof newArr);
+// console.log(newArr); //1,2,3,4,5,6
+// console.log(typeof newArr); //string
 
 //slice splice
 // console.log("original array", myArr);

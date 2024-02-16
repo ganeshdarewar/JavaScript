@@ -1,3 +1,0 @@
-let str = "Hello, world!";
-let result = str.substring(3, 7); // Extracts characters from index 3 to index 6 (7 is not included)
-console.log(result); // Output: "lo, "
