@@ -13,6 +13,12 @@ also cause the other object to change too.
 deeep copy=>
 A deep copy of an object is a copy whose properties do not share the same references
 */
+// let newArr=["Ganesh", "Darewar"]
+// let newArr1=newArr;
+// newArr1[0]=["gavati"];
+// console.log(newArr); //[ [ 'gavati' ], 'Darewar' ]
+// console.log(newArr1); 
+
 // const myArr=[1,2,3, "Ganesh"]
 const myArr=[1,2,3,4,5,6]
 // const newArr=["Ganesh", "only You"]
@@ -43,8 +49,8 @@ const myArr=[1,2,3,4,5,6]
 // console.log("slice array",myArr1);
 // console.log("original array after slice", myArr); //same as original
 
-console.log("original array", myArr);
-let myarr2=myArr.splice(1,3);
-console.log("splice ",myarr2);
-console.log("original array after splice", myArr); // here it deletes portion of splice items in original array
+// console.log("original array", myArr);
+// let myarr2=myArr.splice(1,3);
+// console.log("splice ",myarr2);
+// console.log("original array after splice", myArr); // here it deletes portion of splice items in original array
 

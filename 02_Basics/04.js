@@ -25,13 +25,13 @@ const obj2={
     3:"c",
     4:'d'
 }
-// const onj3=(obj1, obj2);
+const onj3=(obj1, obj2);
 // console.log(onj3);
 
 // const obj3=Object.assign({}, obj1, obj2) //{ '1': 'a', '2': 'b' }
 // console.log(obj3);
 
-const obj3={...obj1, ...obj2}//spread
+// const obj3={...obj1, ...obj2}//spread
 // console.log(obj3);
 
 const userName=[
@@ -74,7 +74,7 @@ const course={
 // console.log(courseInstructor);
 
 const{courseInstructor:instructor}=course;
-console.log(instructor);
+// console.log(instructor);
 
 // api concept
 
@@ -90,3 +90,16 @@ console.log(instructor);
     {},
     {}
 ]
+
+/*
+Which method is used to add properties to an existing object in JavaScript
+Object.assign()
+
+
+Object.seal() prevents new properties from being added, while Object.freeze()
+ prevents any changes to existing properties
+
+*/
+
+const obj = {};
+console.log(obj.hasOwnProperty('toString'));
