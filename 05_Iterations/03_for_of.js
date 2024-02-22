@@ -1,4 +1,10 @@
 // for of
+/*
+Note:
+In general, if you're dealing with arrays or iterable objects, use for...of. If you need 
+to iterate over object properties (enumerable ones), use for...in. However, be cautious 
+when using for...in with arrays due to the potential for unexpected behavior with non-index properties.
+*/
 
 // ["", "", ""]
 // [{}, {}, {}]

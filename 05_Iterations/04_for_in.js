@@ -1,7 +1,14 @@
 // for in
 
 
-const myObj={
+/*
+Note:
+In general, if you're dealing with arrays or iterable objects, use for...of. If you need 
+to iterate over object properties (enumerable ones), use for...in. However, be cautious 
+when using for...in with arrays due to the potential for unexpected behavior with non-index properties.
+*/
+
+const myObj={ 
     js:"Javascript",
     cpp:"c++",
     rb:"ruby"
@@ -32,8 +39,8 @@ const myObj={
 // map.set("FR", "France")
 // map.set("FR", "France")
 
-// for (const key in map) {  //for in not uesd for map
-//     console.log(key);
+// for (const key in map) {  //for in not uesd for map and 
+//     console.log(map[key]);
 // }
 
 
