@@ -72,5 +72,5 @@ const myNewArray=[200,400,100,600]
 function returnArray(getArray){
     return getArray[1]
 }
-// console.log(returnArray(myNewArray));
+console.log(returnArray(myNewArray));
 console.log(returnArray([0,1]));

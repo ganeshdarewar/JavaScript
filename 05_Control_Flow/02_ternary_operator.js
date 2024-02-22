@@ -44,3 +44,16 @@ const iceTeaPrice=100
 // iceTeaPrice >= 80 ? console.log("less than 90"): console.log("more than 90");
 
 iceTeaPrice >= 80 ? console.log("less than 90"): console.log("more than 90");
+
+
+/*
+All of the following values are falsy:
+false
+null
+undefined
+0
+-0
+NaN
+An empty string ('')
+
+*/

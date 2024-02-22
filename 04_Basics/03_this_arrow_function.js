@@ -40,12 +40,12 @@ In browser this holds window as object
 
 // arrow function
 
-// const chai=()=>{
-//     let userName='ganesh'
-//     console.log(this);//{}
-//     console.log(this.userName); // undefined(we cant use this keyword in functoin)
-// }
-// chai()
+const chai=()=>{
+    let userName='ganesh'
+    console.log(this);//{}
+    console.log(this.userName); // undefined(we cant use this keyword in functoin)
+}
+chai()
 
 
 //basic arrow function 
