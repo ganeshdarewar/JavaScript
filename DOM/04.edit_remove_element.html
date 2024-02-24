@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="langauge">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(lang){
+        const liEle = document.createElement("li")
+        liEle.innerHTML=`${lang}`
+        document.querySelector(".langauge").appendChild(liEle)
+    }
+    addLanguage("python");
+
+    function addOptiLangauge(lang){
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector(".langauge").appendChild(li)
+    }
+    addOptiLangauge("golang")
+
+    // edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML="Mojo"
+    const newLi=document.createElement("li")
+    newLi.textContent = "Mojo"
+    secondLang.replaceWith(newLi)
+
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = "<li>Typescript</li>"
+
+
+    // remove
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove();
+
+</script>
+</html>
