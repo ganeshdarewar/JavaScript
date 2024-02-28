@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mouse Position Example</title>
+</head>
+<body>
+
+<div id="output"></div>
+
+<script>
+// Add event listener to track mouse movement
+document.addEventListener("mousemove", function(event) {
+  // Retrieve mouse coordinates
+  var clientX = event.clientX;
+  var clientY = event.clientY;
+  var screenX = event.screenX;
+  var screenY = event.screenY;
+  
+  // Update the output element with the mouse coordinates
+  var output = document.getElementById("output");
+  output.innerHTML = "ClientX: " + clientX + ", ClientY: " + clientY + "<br>"
+                   + "ScreenX: " + screenX + ", ScreenY: " + screenY;
+});
+</script>
+
+</body>
+</html>

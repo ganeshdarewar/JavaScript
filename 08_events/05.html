@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keyboard Event Example</title>
+</head>
+<body>
+
+<input type="text" id="textInput">
+
+<script>
+// Add event listener to track keyboard events
+document.getElementById("textInput").addEventListener("keydown", function(event) {
+  // Retrieve keyboard event properties
+  var altKey = event.altKey;
+  var ctrlKey = event.ctrlKey;
+  var shiftKey = event.shiftKey;
+  var keyCode = event.keyCode;
+  
+  // Log the keyboard event properties
+  console.log("Alt key pressed:", altKey);
+  console.log("Ctrl key pressed:", ctrlKey);
+  console.log("Shift key pressed:", shiftKey);
+  console.log("Key code:", keyCode);
+});
+</script>
+
+</body>
+</html>
