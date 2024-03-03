@@ -1,0 +1,90 @@
+<!-- /*
+json formator tool
+https://api.github.com/users/ganeshdarewar
+https://randomuser.me/
+*/ -->
+
+<!-- ajax request -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .card{
+            width: 50%;
+            height: 50%;
+            background-color: rgba(55, 53, 53, 0.48);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .avatar{
+            width: 30%;
+            height: 60%;
+            border-radius: 50%;
+            padding:10%;
+        }
+    </style>
+</head>
+<body>
+<!-- 0	UNSENT	Client has been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	The operation is complete. -->
+    <div class="card"></div>
+</body>
+<script>
+    const requestUrl ="https://api.github.com/users/ganeshdarewar"
+        const xhr = new XMLHttpRequest()
+        xhr.open("GET", requestUrl)
+        // console.log("here");
+        // xhr.onreadystatechange=()=>{
+        //     console.log(xhr.readyState); 
+        // }
+
+        // console.log(xhr.readyState);
+
+        xhr.onreadystatechange=()=>{
+           if(xhr.readyState === 4){
+            // const data= xhr.responseText
+            // // console.log(data);
+
+            // console.log(typeof data); //string (most when we are using api data is string)
+            // console.log(data.followers);
+
+
+
+            // const data= JSON.parse(xhr.responseText)
+
+            // console.log(typeof data); //string (most when we are using api data is string)
+            // console.log(data.followers);
+
+
+            const data = JSON.parse(xhr.responseText) // string to object
+            console.log(data.avatar_url);
+
+
+            const avatar = document.createElement("img")
+            avatar.className="avatar";
+            avatar.src=data.avatar_url
+            document.querySelector(".card").appendChild(avatar)
+
+            const followers =document.createElement("h1")
+            followers.innerText=`Followers: ${data.followers}`
+            document.querySelector(".card").appendChild(followers)
+           }
+        }
+        xhr.send()
+</script>
+</html>
