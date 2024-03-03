@@ -18,3 +18,11 @@ function splitNumberIntoDigits(a) {
 console.log(splitNumberIntoDigits(123));   // Output: [1, 2, 3]
 console.log(splitNumberIntoDigits(9876));  // Output: [9, 8, 7, 6]
 console.log(splitNumberIntoDigits(0));     // Output: [0]
+
+
+
+/*
+json formator tool
+https://api.github.com/users/ganeshdarewar
+https://randomuser.me/
+*/

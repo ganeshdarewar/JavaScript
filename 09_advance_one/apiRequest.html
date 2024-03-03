@@ -72,7 +72,7 @@ https://randomuser.me/
 
 
             const data = JSON.parse(xhr.responseText) // string to object
-            console.log(data.avatar_url);
+            // console.log(data.avatar_url);
 
 
             const avatar = document.createElement("img")
@@ -86,5 +86,6 @@ https://randomuser.me/
            }
         }
         xhr.send()
+        console.log(xhr);
 </script>
 </html>
