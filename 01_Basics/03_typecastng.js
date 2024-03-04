@@ -18,7 +18,7 @@ let score="3abc"
 
 // let score=null
 // console.log(typeof score);
-// console.log(typeof(score));
+// console.log(typeof(score)); // => object
 
 // let valueInnumber=Number(score);  // typecasting
 // console.log(typeof valueInnumber);
@@ -26,7 +26,7 @@ let score="3abc"
 
 
 // let score=undefined
-// console.log(typeof score);
+// console.log(typeof score);//=> undefined
 // console.log(typeof(score));
 
 // let valueInnumber=Number(score);  // typecasting
@@ -58,7 +58,8 @@ true=>1
 
 // let loggedIn=0
 // let isLoggedIn=Boolean(loggedIn);
-// console.log(isLoggedIn);
+// console.log(isLoggedIn);//=> false
+
 // let loggedIn=""
 // let isLoggedIn=Boolean(loggedIn);
 // console.log(,isLoggedIn);  //=>false
@@ -109,8 +110,8 @@ let mySum=1+"2"
 
 // chatgpt mcqs
 
-//  console.log(typeof(+"5"));
-// console.log(typeof(-"5"));
+//  console.log(typeof(+"5")); //=>Number
+// console.log(typeof(-"5")); //=>Number
 
 // let checkBoolean=Boolean(undefined)
 // console.log(checkBoolean); //false

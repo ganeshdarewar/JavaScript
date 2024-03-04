@@ -9,7 +9,7 @@ let myDate = new Date()
 // console.log(myDate.toJSON());
 // console.log(myDate);
 
-// console.log(typeof myDate);
+// console.log(typeof myDate); => object
 
 
 // let myCreatedDate=new Date(2024,0,12);
