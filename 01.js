@@ -37,7 +37,7 @@ const userTwo = new User("darewar", 2, "false") // create new copy(instance)
 // console.log(userOne);
 // console.log(userTwo);
 // console.log(userTwo.greet());
-console.log(userTwo.constructor()); // it creates reference of user object
+// console.log(userTwo.constructor()); // it creates reference of user object
 
 
 /*
